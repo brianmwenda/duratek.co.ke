@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable= no, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta charset="utf-8">
+    <title>Duratek ICT & Circuits LTD</title>
+    <link rel="icon" href="pics/cropped.png">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      /* Set the size of the div element that contains the map */
+     #map {
+      
+       height: 400px;  /* The height is 400 pixels */
+       width: 100%;  /* The width is the width of the web page */
+      }
+   </style>
+  </head>
+
+  <body onload=load()>
+   
+    <div id="loader"></div>
+    <header>
+      <div class="container">
+        <nav id="nav">
+          <div class="nav-brand">
+            <a href="#home"><img src="pics/cropped.png" alt=""></a>
+            
+          </div>
+          <h5 class="name">Duratek ICT & Circuits LTD</h5>
+          <div class="menu-icons open">
+            <i class="icon ion-md-menu"></i>
+          </div>
+
+          <ul class="nav-list" id="nav2">
+            <div class="menu-icons close">
+              <i class="icon ion-md-close"></i>
+
+            </div>
+            <li class="nav-item " >
+              <a data-page="home" href="#home" class="nav-link  ">Home</a>
+            </li>
+            <li class="nav-item">
+              <a data-page="project" href="#services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a data-page="about" href="#about" class="nav-link">About</a>
+            </li>
+            
+            <li class="nav-item">
+              <a data-page="contact" href="#contact" class="nav-link">contact</a>
+            </li>
+
+            <li class="nav-item">
+              <a data-page="experts" href="experts.html" class="nav-link">Experts</a>
+            </li>
+            <li class="nav-item">
+              <a data-page="gallery" href="durashop.php" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item dropdown" onclick="">
+              <a class="dropbtn nav-link">
+                Settings
+              </a>
+              <div class="dropdown-content">
+                <a data-page="login" href="login.php" class="nav-link">Login</a>
+                <div class="toggles">
+                  <a class="nav-link"><i class=" icon ion-ios-moon" id="moon" ></i></a>
+                <a class="nav-link"><i class=" icon ion-ios-sunny" id="sunny"></i></a>
+                </div>
+              </div>
+              
+            </li>
+            <div class="indicator"></div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+   <!-- home section -->
+   <section data-index="0" class="home" id="home">
+  <div  class="hero">
+    
+    
+    <div class="container">
+    
+      <div class="main-message">
+        <div class="logohover">
+          <a href="#home"><img id="imag-top" src="pics/png-logo.png" alt="" srcset=""></a>
+          
+        </div>
+        
+       
+        <p><br>
+          We are your one technology partner ,solving all your technical glitches to keep your systems running the smoothest possible
+        </p>
+      <div class="cta">
+        <a href="#calls" class="btn">Request Service</a>
+        
+        
+       
+      </div>
+     
+      
+     
+      </div>
+    </div>
+  
+     </div>   
+  </section>
+  
+  <!-- services section -->
+  <section data-index="1" class="project" id="services">
+  <div  class="experience-outdoors">
+    <div class="container">
+      <div class="title-heading">
+        <h3>Our services</h3>
+        <img src="pics/offe.png" alt="" srcset="">
+        <h1>TECH, MADE SIMPLE</h1>
+        <p>Everyone can design,but not everyone is an engineer .what makes the difference is the keen eye for detail and technical experiences
+         
+        </p>
+
+      </div>
+
+      <div class="activities-grid">
+       <!-- grid item one -->
+       <div class="card-container">
+        <div id="card">
+          <div  class="activities-grid-item star-gazing">
+            
+             <h1>CCTV Installations</h1>
+            
+             <img id = "showimages" src="pics/Security-Camera-PNG-Transparent.png" alt="" srcset="">
+             <i  class="icon ion-ios-finger-print" id="see"><h5>More</h5></i>
+           </div>
+           <div id='after' class="activities-grid-item star-gazing">
+            
+             
+             <p id='description'>
+               Digital surveillance system to keep your home secure and theft proof. <br><br>
+               <a href="#calls">CONTACT US</a>  for more information about installation services.
+               
+            </p>
+           
+            
+           </div>
+         </div>
+       </div>
+     
+              <!-- grid item TWO -->
+              <div class="card-container">
+                <div id="card">
+                  <div  class="activities-grid-item star-gazing">
+                    
+                     <h1>Web design & Developments</h1>
+                     <img id = "showimages" src="pics/responsive-web-design-website-web-development-web-design-png-picture-5262e29d9c008c39481dd578252e52d9.png" alt="" srcset="">
+                     <i  class="icon ion-ios-finger-print" id="see"><h5>More</h5></i>
+                   </div>
+                   <div id='after' class="activities-grid-item star-gazing">
+                    
+                     
+                     <p id='description'>
+                       Need to market your bussiness and products electronically? <br> We have got you. <br><br>
+                       <a href="#calls">CONTACT US</a> for more information about web development for you today.
+                       </p>
+                  
+                   </div>
+                 </div>
+               </div>
+
+               <!-- grid item three -->
+       <div class="card-container">
+        <div id="card">
+          <div  class="activities-grid-item star-gazing">
+            <i  class="icon ion-ios-finger-print" id="see"><h5>More</h5></i>
+             <h1>Hardware Maintenance</h1>
+             <img id = "showimages" src="pics/Computer-Motherboard-PNG-Pic.png" alt="" srcset="">
+            
+           </div>
+           <div id='after' class="activities-grid-item star-gazing">
+            
+             
+             <p id='description'>
+               Are your machines dusty, alarmingly slow or not functioning properly? don`t worry, we are here to solve that
+               <br><br>
+               <a href="#calls">CONTACT US</a> for services and get your machines as good as new.
+           
+            </p>
+           
+         </div>
+       </div>
+</div>
+              <!-- grid item four -->
+              <div class="card-container">
+                <div id="card">
+                  <div  class="activities-grid-item star-gazing">
+                    <i  class="icon ion-ios-finger-print" id="see"><h5>More</h5></i>
+                     <h1>Church Systems Setup</h1>
+                     <img id = "showimages" src="pics/microphone-audio-loudspeaker-sound-reinforcement-system-music-dj-2c26dc44e6611984fe262c44199cd7d5.png" alt="" srcset="">
+                    
+                   </div>
+                   <div id='after' class="activities-grid-item star-gazing">
+                    
+                     
+                     <p id='description'>
+                      Are you having trouble setting up church systems for your services, is your sound output not pleasing or are you in need of an expert to do system controls for you? worry not.
+                      <br><br>
+                      <a href="#calls">CONTACT US</a> and you will have your services running smooth.
+                    </p>
+                    
+                   </div>
+                 </div>
+               </div>
+
+                 <!-- grid item five -->
+       <div class="card-container">
+        <div id="card">
+          <div  class="activities-grid-item star-gazing">
+            <i  class="icon ion-ios-finger-print" id="see"><h5>More</h5></i>
+             <h1>GPS TRACKERS</h1>
+             <img id = "showimages" src="pics/track.png" alt="" srcset="">
+             
+           </div>
+           <div id='after' class="activities-grid-item star-gazing">
+            
+             
+             <p id='description'>
+               Do you value your car or motor bike? then you should have a security plan for that beautiful and expensive machine.
+              <br><br>
+              <a href="#calls">CONTACT US</a> and get a gps tracker with inbuilt SOS emergency mode to secure you and your property.
+            </p>
+            
+           </div>
+         </div>
+       </div>
+
+              <!-- grid item six -->
+              <div class="card-container">
+                <div id="card">
+                  <div  class="activities-grid-item star-gazing">
+                    <i  class="icon ion-ios-finger-print" id="see"><h5>More</h5></i>
+                     <h1>HARDWARE REPAIR</h1>
+                     <img id = "showimages" src="pics/computer-hardware-computer-repair-technician-computer-scientist-electronics-computer-1dc966fbb84073fdc589bbab27e20e4a.png" alt="" srcset="">
+                   
+                   </div>
+                   <div id='after' class="activities-grid-item star-gazing">
+                    
+                     
+                     <p id='description'>
+                       Do you have a damaged machine? well dont throw it away.
+                       <br><br>
+                       <a href="#calls">CONTACT US</a> and well have that machine fixed.
+                    </p>
+                    
+                   </div>
+                 </div>
+               </div>
+       
+                <!-- grid item six -->
+              <div class="card-container">
+                <div id="card">
+                  <div  class="activities-grid-item star-gazing">
+                    <i  class="icon ion-ios-finger-print" id="see"><h5>More</h5></i>
+                     <h1>Power Backup Solutions</h1>
+                     <img id = "showimages" src="pics/power-inverters-battery-charger-sine-wave-solar-inverter-wave-c5d973efd00f0ccc687c5bace76b8c9a.png" alt="" srcset="">
+                     
+                   </div>
+                   <div id='after' class="activities-grid-item star-gazing">
+                    
+                     
+                     <p id='description'>
+                       Are you having trouble with power outage while working or during family dinner, worry not.
+                       <br><br>
+                       <a href="#calls">CONTACT US</a> and we`ll provide modern power backup solutions for you.
+                    </p>
+                   
+                   </div>
+                 </div>
+               </div>
+
+                <!-- grid item six -->
+              <div class="card-container">
+                <div id="card">
+                  <div  class="activities-grid-item star-gazing">
+                    <i  class="icon ion-ios-finger-print" id="see"><h5>More</h5></i>
+                     <h1>Network Solutions</h1>
+                     <img id = "showimages" src="pics/networking-transparent-png-image-1280.png" alt="" srcset="">
+                     
+                   </div>
+                   <div id='after' class="activities-grid-item star-gazing">
+                   
+                     
+                     <p id='description'>
+                       Enjoy fast internet speeds at home or office with our planned network cabling strategies that will save you alot of time during maintenance.
+                       <br><br>
+                       <a href="#calls">CONTACT US</a> to get our networking services.
+                    </p>
+                   
+                   </div>
+                 </div>
+               </div>
+
+                               <!-- grid item six -->
+              <div class="card-container">
+                <div id="card">
+                  <div  class="activities-grid-item star-gazing">
+                    <i  class="icon ion-ios-finger-print" id="see"><h5>More</h5></i>
+                     <h1>Car System Diagnosis</h1>
+                     <img id = "showimages" src="pics/car.png" alt="" srcset="">
+                     
+                   </div>
+                   <div id='after' class="activities-grid-item star-gazing">
+                
+                     
+                     <p id='description'>
+                       Get your car diagnosed of any malicious Software in your system to avoid car break down while travelling 
+                       and have your car in good condition.
+                       <br><br>
+                       <a href="#calls">CONTACT US</a> to get our service.
+                    </p>
+                   
+                   </div>
+                 </div>
+               </div>
+ 
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="reason">
+    <br>
+    <h1>Why choose Duratek</h1>
+    <img src="pics/office.png" style="width:60%" alt="" srcset="">
+    <p>
+     Flexible working hours and convenience from reduced scheduled involvement.
+     <br><br>
+     Efficiency on time taken and resources involved to enjoy My services.
+     <br><br>
+     Improved reliability and competence from experts, what most are short of.
+     <br><br>
+     Effective support system to start-ups thus fostering on idea growth.
+     <br><br>
+     Tailor made packages to customer needs and customized less-costly premiums to subscribers.
+    </p>
+    <h3>How to interact</h3>
+    <p>
+      On-call basis, Whatsapp and email interactions are the basic mechanisms through which our customers
+      make contact.<br><br>
+      <h5>Ndumbamugambi@gmail.com</h5>
+      
+    </p>
+    <a href="#calls" class="btn">Learn More</a>
+    <br><br>
+  </div>
+ </section>
+
+<br><br>
+<!-- about section -->
+<section data-index="2" class="about" id="about">
+<div  class="testimonials">
+  
+    <div class="container">
+      <div class="testimonial">
+        <div class="testmonial-text-box">
+          <i class="icon ion-ios-quote"></i>
+          <p>Chief Technology Officer.</p>
+          
+        </div>
+        <div class="testimonial-customer">
+          <img src="pics/mugambi.jpg" alt="" srcset="">
+          <h4>MR.Ndumba E. Mugambi</h4>
+          <div id="right">
+            <li><a>(B.Eng Electrical &<br> Electronics Engineering)</a></li><progress id="pro" value="90" max="100"> 90% </progress>
+        <li><a>HCNA</a></li><progress id="pro" value="80" max="100"> 80% </progress>
+     
+          </div>
+        
+    
+        
+        <div id="left">
+           
+            <li><a >Linux(LPI I)</a></li><progress id="pro" value="50" max="100"> 50% </progress>
+            <li><a>CCNA</a></li><progress id="pro" value="70" max="100">70% </progress>
+           
+        </div>
+          <h4>About Me</h4>
+       
+          <p>
+            Expert in Electrical design and installation, computer networking & Campus LAN, Robotics and Embedded system, Optical Fibre Technology (Ftth), Signal Transmission,Electronic components diagnosis, CCTV installation(Analogue & IP).
+          </p>
+          <h4>Duratek</h4>
+          <div class="goalcontainer">
+            <p class="goal" >Mission</p>
+            <p>Our mission is to generate exceptional value for our dealers and customers by offering the latest technologies and enhancing our customers operations through our ICT services</p>
+           
+          </div>
+         
+          <div class="goalcontainer">
+            <p class="goal">Vision</p>
+            <p>To emerge as a Premium solution provider of latest and advanced IT enabled products and professional services and enhancing its reach to end users as well as in corporate by giving the superior & qualitative products and prompt after sales support and to be the NO. one choice for the end user consumer.</p>
+            
+          </div>
+
+         <div class="goalcontainer">
+            <p class="goal">Strategic Goal</p>
+            <p>To emerge as the most trusted all round technology partner in the Eastern Region by 2020!</p>
+           
+          </div>
+
+          <div class="goalcontainer2">
+          <h1 class="goal2tittle">Our project approach strategies</h1>
+          <p>Duratek ICT & Circuits LTD prides itself in being the most respected ICT company when it comes to handling our clients.We have developed a suitable structure that walk with us through out the project while monitoring the key performance indicators and making adjustments along the way.</p>
+           
+          <p class="goal2">1.Survey/Request</p>
+          <p>This is the most premier part of any transaction. We term it as most important to us since its where we identify opportunity to provide for. It’s the point where we and the Client make contact for the first time. Regardless of whether it’s our sales team that approached the need or the need that came to us (In this regard the Client), Duratek ict & circuits ltd always ensures to seize this opportunity and engage the client to identify their needs.</p>
+ 
+
+          <p class="goal2">2.Evaluation</p>
+          <p> With all the details and data collected from the Client, Duratek ict & circuits ltd team can sit down and assess the requirements with the best solution that will best suit the Client’s needs. Determination of final product or service to the client shall depend on,:</p>
+          <div class="listofvar">
+            <li>Research from relevant teams</li>
+            <li>Compatibility of solution with existing infrastructure</li>
+            <li>Client end usage requirement</li>
+            <li>Availability and reliability of solution</li>
+            <li>Outstanding customer support</li>
+            <li>Pricing factor</li>
+          </div>
+          
+          <p>After these factors are put into consideration, we conclude on final remedy which is complete after the next step.</p>
+        
+          <p class="goal2">3.Presentation / Proposal</p>
+          <p>The third strategy is to involve the Client in the solution which involves a demo that would be either verbal, written, video or a technical presentation. During this, the Client can engage our team with queries and clarifications. This presents a chance to modify the solution or customize it to the customer preference. The next strategy is partly connected to this and can either follow immediately or a later date.</p>
+       
+          <p class="goal2">4.Agreement / Negotiations</p>
+          <p>On this crucial stage is where a conclusion on the particular solution to be implemented is chosen. Financial implication is laid on the table and discussed in regards to choice if solutions are more than one. Payment duration is agreed upon acceptance of our proposal. There is always a round table negotiation platform on total costs and delivery period. Also this shall include any after sale agreement e.g after sale service, service maintenance, and warranties e.t.c. When this is presented in proper writing, then the next step can be executed.</p>
+       
+          <p class="goal2">5.Procurement / Fabrication</p>
+          <p>Upon receipt of written acceptance of terms of delivery and payment, Duratek ict & circuits ltd is obliged to begin the process of acquiring if not fabricating the proposed solution into a tangible order. This is a vital stage because all that was proposed has to be put into reality and must be in a functional state. All standards are duly observed to ensure solution is of certified status. ter achieving the final status within scope of works, test runs are done to ensure the (to be delivered) solution is of sound nature.</p>
+       
+          <p class="goal2">6.Delivery / Installation</p>
+          <p>With respect to step Four, where terms and conditions are deemed to apply, implementation of the solution at the end usage point shall be delivered accordingly. At this stage mainly the technical team is fully involved and will load full bars to deliver service above bar and within the stipulated time. Access to site is granted in liaisons between site manager and Client. Delivery is less precise for confirmation but for the installation solutions, details have to be deeply scrutinized to avoid malfunctions, delayed handovers and material wastage. This is done openly in the client’s clear line of sight for ease of monitoring and rectification. After completion of this task, we strategically move to the next step.</p>
+       
+          <p class="goal2">7.Testing & Training</p>
+          <p>During this period, attention is paid to detail by the client or the client’s personnel. As the testing of final performance of the solution takes place, Duratek personnel shall equip the Client and their associates with knowledge on using and troubleshooting the system solutions. This is the final stage of implementation before the handover is actually done. Rectifications of the final stature are done. Through the Clients satisfaction, the project is deemed complete. Note that this can continue as the Client undertakes his daily routines as testing is well done during the real task operations.</p>
+       
+          <p class="goal2">8.Commissioning & Handover</p>
+          <p>Handing over is vital as it is the official time that solution is termed as successful. Commissioning is done on writing to confirm that all is per stated proposal and if there are any changes, then they are documented and asserted to. At this juncture, certificates of completion are issued and financial compensation can commence.</p>
+       
+        </div>
+        <br><br><br><br><br><br>
+        <a href="experts.html" class="btn">OUR EXPERTS</a>
+        <a href="documents/cv.docx" target="_blank"  class="btn">DOWNLOAD BRONCHURE</a>
+          
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+<!-- contact section -->
+  <section data-index="3" class="contact" id="contact">
+    <div class="begin-adventure">
+      <div class="container">
+        <div class="title-heading">
+          <h3>Let the</h3>
+          <h1>Project begin</h1>
+          
+          
+          <h3>Electrical Installations </h3>
+          <img src="pics/elct.png" alt="" srcset=""></img>
+          <p>Our teams of qualified electricians ensure that every job, no matter the size and complexity is carried out in a safe and professional manner. 
+          </p>
+          <a class="btn" href="#calls">More</a>
+          <br><br>
+        </div>
+
+        <div class="adventure-grid">
+                  <!-- adventure grid item one -->
+                  <div class="adventure-grid-item">
+                    <h3>Web Design & Development</h3>
+                    <img src="pics/web.png" alt="" srcset=""></img>
+                    <p>Get beautiful websites for you today 
+                    
+                    </p>
+                
+                         <a class="btn" href="#calls">Get Service</a>
+                         <br><br>
+                  </div>
+                          <!-- adventure grid item one -->
+          <div class="adventure-grid-item">
+            <h3>Hardware Maintenance & Repair</h3>
+            <img src="pics/Computer-Motherboard-PNG-Pic.png" alt="" srcset=""></img>
+            <p>Get your machines in good working condition 
+            
+            </p>
+           
+                 <a class="btn" href="#calls">Get Service</a>
+                 <br><br>
+          </div>
+          <!-- adventure grid item one -->
+          <div class="adventure-grid-item">
+            <h3>Solar Systems Installations </h3>
+            <img src="pics/solari.png" alt="" srcset=""></img>
+            <p>Get power backup solutions today. 
+            
+            </p>
+            <div class="listing">
+                
+              <li>Solar power</li>   
+              <li>Solar Water heating systems</li> 
+             
+                 </div>
+                 <a class="btn" href="#calls">Get Service</a>
+                 <br><br>
+          </div>
+
+            <!-- adventure grid item two -->
+            <div class="adventure-grid-item">
+              <h3>ICT Security Systems </h3>
+          <img src="pics/Cyber-Security-PNG-Transparent-Picture.png" alt="" srcset="">
+              <p>We focus on developing innovative solutions that enable you to keep your people, property, operations and information safe.
+                     
+                   
+              </p>
+              <div class="listing">
+                <li>Access control</li>
+                <li>Intrusion detection</li>
+                <li>Building automation</li>
+                
+              
+               </div>
+               <a class="btn" href="#calls">Get Service</a>
+               <br><br>
+            </div>
+
+              <!-- adventure grid item 3 -->
+              <div class="adventure-grid-item">
+                <h3>Networking Solutions </h3>
+            <img src="pics/networking-transparent-png-image-1280.png" alt="" srcset="">      
+                     
+                </p>
+                <div class="listing">
+                  <li>Structured cabling</li>
+                  <li>Wi-Fi installations</li>
+                  <li>Voip solutions</li>
+                  
+                
+                 </div>
+                 <a class="btn" href="#calls">Get Service</a>
+                 <br>
+              </div>
+        <!-- adventure grid item one -->
+        <div class="adventure-grid-item">
+          <h3>Vehicle Diagnostics & Programming </h3>
+          <img src="pics/car.png" alt="" srcset=""></img>
+          <p>Get any car model diagnised today.
+          
+          </p>
+          
+               <a class="btn" href="#calls">Get Service</a>
+               <br><br>
+        </div>
+                  <!-- adventure grid item 4 -->
+            <div class="adventure-grid-item">
+              <h3>Car Tracker Installation</h3>
+          <img src="pics/track.png" alt="" srcset="">
+          <p>Track your car and know its where abouts today.
+          
+          </p>
+          <a class="btn" href="#calls">Get Service</a>
+          <br><br>
+            </div>
+
+                 <!-- adventure grid item 5 -->
+                 <div class="adventure-grid-item">
+                  <h3>Church sound & Projector setup</h3>
+              <img src="pics/microphone-audio-loudspeaker-sound-reinforcement-system-music-dj-2c26dc44e6611984fe262c44199cd7d5.png" alt="" srcset="">
+              <p>Get your projectors setup today.
+          
+              </p>
+              <a class="btn" href="#calls">Get Service</a>
+              <br>
+                </div>
+
+                   <!-- adventure grid item 6 -->
+                   <div class="adventure-grid-item">
+                    <h3>CCTV Installations</h3>
+                <img src="pics/Security-Camera-PNG-Transparent.png" alt="" srcset="">
+                <p>Start your home, car, school and office surveillance today. 
+          
+                </p>
+                <a class="btn" href="#calls">Get Service</a>
+                <br><br>
+                  </div>
+        </div>
+        <H4>OVERVIEW</H4>
+        <p>
+          Duratek ict & circuits ltd provides solutions to the most current and emerging ICT problems in the current market. Our areas of business include:
+        </p>
+        <div class="overview">
+          <div class="listing">
+            <li>Hardware solutions (including supply and installation)</li>
+            <li>Church sound, projector setup and equipment maintenance.</li>
+            <li>Software solutions</li>
+            <li>Programming applications</li>
+            <li>ICT maintenance contracts</li>
+            <li>ICT Security solutions</li>
+            <li>Computer accessories</li>
+            <li>Networking implementations</li>
+            <li>Consultancy services</li>
+           </div>
+           <div>
+             <img src="pics/Office-Chair-PNG-Transparent-Picture.png" alt="" srcset="">
+           </div>
+        </div>
+        
+         <p>Consultancy services</p>
+       
+      </div>
+    </div>
+  
+<br><br>
+
+<div data-index="4" id="calls"> 
+ <div>
+  <div class="contact">
+    <div class="contactzone">
+      <br><br>
+      <h4 style="color:whitesmoke">CONTACT US</h4>
+      <P style="color:rgb(124, 124, 124)">
+        Need an expert? You are more than welcome to leave your contact info and we will be in touch shortly
+      </P>
+      <div class="icons">
+        <div>
+          <a href="#"><i  class="icon ion-ios-mail"></i></a>
+        <H5 style="color:rgb(124, 124, 124)">CONTACT US</H5>
+        <P >Send us an <br>Email and we <br> will be glad to <br>sort you out ASAP.
+          <P id="bri">Info@duratek.co.ke</P>
+        </P>
+        </div>
+        <!-- <div style="padding: 0;"><section data-index="5" class="breaker"></section></div> -->
+        <div id="inbetween">
+          <a><i class="icon ion-ios-home"></i></a>
+          <H5 style="color:rgb(124, 124, 124)">VISIT US</H5>
+          <p>Duratek office/Warehouse</p>
+          <P id="bri" >Next to uchumi<br> Meru Town, <br>P.O Box 2328-60200<br> Meru. Kenya</P>
+         </div>
+         <!-- <div style="padding: 0;"><section data-index="5"  class="breaker"></section></div> -->
+        <div>
+          <a><i class="icon ion-ios-call"></i></a></i>
+          <H5 style="color:rgb(124, 124, 124)">CALL US</H5>
+          <p >Get in touch<br> with an Expert <br>on phone</p>
+          <P id="bri">+254 775077372</P>
+        </div>
+        
+        <br>
+      </div>
+      <br><br><br><br>
+    </div>
+   
+    
+  </div>
+</div>
+</div>
+<br>
+        <!--map section start-->
+        <div id="map"></div>
+        <br><br>
+        <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var meru = {lat: -0.053543, lng: 37.648399};
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 10, center: meru});
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({position: meru, map: map});
+    }
+        </script>
+        <!--Load the API from the specified URL
+        * The async attribute allows the browser to render the page while the API loads
+        * The key parameter will contain your own API key (which is not needed for this tutorial)
+        * The callback parameter executes the initMap() function
+        -->
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClz-fUqwBTdf2qE_89YXOdKLsSnmX3lrk&callback=initMap">
+        </script>
+<div class="terms">
+  <h3>Terms & Conditions</h3>
+  <img src="pics/anounce.png" alt="" srcset="">
+  <p>
+    I hereby accept to T&C applying for services from Duratek and request
+    consultacy services and assistance to services in all or a few projects across
+    the spectrum at my cost.
+
+    Hereby aware I should Not share log in credentials to the online accounts through the email
+    for matters pertaining security, therefore advised to use email or a call to the
+    official bussiness number.
+  </p>
+</div>
+</section>
+<div class="sidelink">
+  
+  <a id="first"  href="https://api.whatsapp.com/send?phone=+254775077372"><i  class="icon ion-logo-whatsapp"></i></a>
+  <a id="sec" href="https://www.instagram.com/ndumbamugambi/"><i class="icon ion-logo-instagram"></i></a>
+  
+  <a id="tr" href=https://www.linkedin.com/feed><i class="icon ion-logo-linkedin"></i></a>
+</div>
+<script>
+  document.querySelector(".sidelink").style.display = "none";
+</script>
+<div id="move" onclick=topFunction()>
+  <span  class="fa fa-angle-up"></span>
+</div>
+ <footer>
+
+  
+   <p>&copy;2020 Brian Mwenda: All Rights observed</p>
+ </footer>
+<!-- <div class="intro">
+  <p id="text">hallo</p>
+  <video class="video" src="Komp 2-1.mp4"></video>
+</div> -->
+
+  </body>
+  
+  <!-- </script><script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js" integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI=" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+ 
+   -->
+  <script type="text/javascript" src="portfolio.js"></script>
+  <script type="text/javascript" src="menu.js"></script>
+  <script type="text/javascript" src="darkmode.js"></script>
+  </html>
+
+  <script>
+    function load(){
+      document.getElementById('loader').style.display = 'none';
+  
+    document.querySelector(".sidelink").style.display = "";
+
+    }
+
+  </script>
+
+<script>
+  //=========================scroll up button======================//
+  //Get the button
+  var mybutton = document.getElementById('move');
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 0) {
+      mybutton.style.display = "";
+      document.querySelector(".sidelink").style.display = 'none';
+    } else {
+      mybutton.style.display = "none";
+      document.querySelector(".sidelink").style.display = '';
+    }
+  }
+
+      
+  // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
